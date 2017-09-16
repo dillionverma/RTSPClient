@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         VideoView myVideoView = (VideoView) findViewById(R.id.videoView);
-        myVideoView.setVideoPath("http://10.21.155.226:8080/video");
+        myVideoView.setVideoPath("rtsp://10.21.155.226:8086");
         myVideoView.setMediaController(new MediaController(this));
         myVideoView.start();
 
